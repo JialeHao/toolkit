@@ -5,9 +5,7 @@ After=network.target
 
 [Service]
 Type=simple
-
 ExecStart=/usr/local/prometheus/prometheus  --config.file=/usr/local/prometheus/prometheus.yml --storage.tsdb.path=/usr/local/prometheus/data --web.enable-lifecycle --enable-feature=remote-write-receiver --query.lookback-delta=2m
-
 Restart=on-failure
 SuccessExitStatus=0
 LimitNOFILE=65536
