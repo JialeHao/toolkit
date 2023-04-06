@@ -17,7 +17,7 @@ while getopts ':f:i:' OPT; do
 done
 
 BASE_DIR="/usr/local/mysql"
-DATA_BASE_DIR="/opt/mysql"
+DATA_BASE_DIR="/db"
 DATA_DIR="${DATA_BASE_DIR}/data"
 RUN_DIR="${DATA_BASE_DIR}/run"
 LOG_DIR="${DATA_BASE_DIR}/log"
