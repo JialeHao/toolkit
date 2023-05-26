@@ -22,7 +22,7 @@ TimeoutSec=0
 ExecStart=/usr/local/mysql/bin/mysqld --defaults-file=/etc/my.cnf $MYSQLD_OPTS 
 
 # Use this to switch malloc implementation
-EnvironmentFile=-/etc/sysconfig/mysql
+EnvironmentFile=-/etc/default/mysqld
 
 # Sets open_files_limit
 LimitNOFILE = 10000
